@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhangrenhua.indicatorview.demo.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.zhangrenhua.indicatorview.CircleIndicatorView
+                android:id="@+id/circle_indicator_view0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ci_background="#00ff00"
+                app:ci_gravity="center"
+                app:ci_margin="20dp"
+                app:ci_mode="solo"
+                app:ci_radius="10dp"
+                app:ci_selected_background="#ff0000" />
+
+            <com.zhangrenhua.indicatorview.CircleIndicatorView
+                android:id="@+id/circle_indicator_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:ci_background="#00ff00"
+                app:ci_gravity="center"
+                app:ci_margin="20dp"
+                app:ci_mode="outside"
+                app:ci_radius="10dp"
+                app:ci_selected_background="#ff0000" />
+
+            <com.zhangrenhua.indicatorview.CircleIndicatorView
+                android:id="@+id/circle_indicator_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:ci_background="#00ff00"
+                app:ci_gravity="center"
+                app:ci_margin="20dp"
+                app:ci_mode="inside"
+                app:ci_radius="10dp"
+                app:ci_selected_background="#ff0000" />
+
+            <com.zhangrenhua.indicatorview.CircleIndicatorView
+                android:id="@+id/circle_indicator_view3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:ci_background="#00ff00"
+                app:ci_gravity="center"
+                app:ci_margin="20dp"
+                app:ci_mode="solo"
+                app:ci_moving_scale_ratio="3"
+                app:ci_radius="4dp"
+                app:ci_selected_background="#ff0000" />
+
+            <com.zhangrenhua.indicatorview.RectIndicatorView
+                android:id="@+id/rect_indicator_view0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:ri_background="#00ff00"
+                app:ri_gravity="center"
+                app:ri_height="10dp"
+                app:ri_margin="20dp"
+                app:ri_mode="solo"
+                app:ri_selected_background="#ff0000"
+                app:ri_width="50dp" />
+
+            <com.zhangrenhua.indicatorview.RectIndicatorView
+                android:id="@+id/rect_indicator_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:ri_background="#00ff00"
+                app:ri_gravity="center"
+                app:ri_height="10dp"
+                app:ri_margin="20dp"
+                app:ri_mode="outside"
+                app:ri_selected_background="#ff0000"
+                app:ri_width="50dp" />
+
+            <com.zhangrenhua.indicatorview.RectIndicatorView
+                android:id="@+id/rect_indicator_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:ri_background="#00ff00"
+                app:ri_gravity="center"
+                app:ri_height="10dp"
+                app:ri_margin="20dp"
+                app:ri_mode="inside"
+                app:ri_selected_background="#ff0000"
+                app:ri_width="50dp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
